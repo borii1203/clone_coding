@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대관령 음악제(모작)</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.scss">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function () {
+            let prevScrollBar = 0;
+
+            $(window).on('scroll', function(){
+                let scrollBar = $(this).scrollTop();
+
+                if(scrollBar > prevScrollBar){
+                };
+                prevScrollBar = scrollBar;
+
+            });//header scroll
+            var swiper = new Swiper(".mainSwiper", {
+                effect: "fade",
+                loop: "ture",
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+            var swiper = new Swiper(".concertSwiper", {
+                slidesPerView: 4.1,
+                spaceBetween: 47,
+            });
+
+            var swiper = new Swiper(".vertSwiper", {
+                slidesPerView: "auto",
+                spaceBetween: 50,
+                direction: "vertical",
+                loop: "ture",
+                speed: 9000,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
+            });
+
+            var swiper = new Swiper(".vertSwiper_rev", {
+                slidesPerView: "auto",
+                spaceBetween: 50,
+                direction: "vertical",
+                loop: "true",
+                speed: 9000,
+                freeMode: true,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                    reverseDirection: true
+                },
+            });
+
+            var swiper = new Swiper(".logoSwiper", {
+                slidesPerView: "auto",
+                spaceBetween: 120,
+                loop: "true",
+                speed: 3500,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
+            });
+        });//script end
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="inner">
+            <div class="nav_wrap">
+                <h1 class="logo">
+                    <img src="img/mipc_logo.svg" alt="">
+                </h1><!-- .logo end -->
+
+                <nav class="nav">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">공연</a>
+                            <ul class="depth-02">
+                                <li><a href="#">공연 캘린더</a></li>
+                                <li><a href="#">공연 예매</a></li>
+                                <li><a href="#">패키지 예매</a></li>
+                                <li><a href="#">예매 안내사항</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">교육</a>
+                            <ul class="depth-02">
+                                <li><a href="#">시즌 교육프로그램</a></li>
+                                <li><a href="#">연중 교육프로그램</a></li>
+                                <li><a href="#">영 아티스트 콘서트</a></li>
+                                <li><a href="#">지원·신청</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">소식</a>
+                            <ul class="depth-02">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">뉴스</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">대관령음악제</a>
+                            <ul class="depth-02">
+                                <li><a href="#">소개</a></li>
+                                <li><a href="#">예술감독</a></li>
+                                <li><a href="#">조직도</a></li>
+                                <li><a href="#">후원 및 협력사</a></li>
+                                <li><a href="#">문의</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">아카이브</a>
+                            <ul class="depth-02">
+                                <li><a href="#">평창대관령음악제</a></li>
+                                <li><a href="#">기획공연</a></li>
+                                <li><a href="#">교육사업</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav><!-- .nav end -->
+            </div><!-- .nav_wrap end -->
+
+            <div class="btn_wrap">
+                <a href="#"><img src="img/mypage_icon.svg" alt=""></a>
+
+                <button type="button" class="lang">
+                    <img src="img/lang_icon.svg" alt="">
+
+                    <ul class="depth-02">
+                        <li><a href="#">KR</a></li>
+                        <li><a href="#">EN</a></li>
+                    </ul>
+                </button>
+
+                <button type="button" class="search"><img src="img/search_icon.svg" alt=""></button>
+
+                <button type="button" class="menu">
+                    <span></span>
+                </button>
+            </div><!-- .btn_wrap end -->
+        </div><!-- .inner end -->
+    </header><!-- .header end -->
+
+    <main class="main">
+        <section class="main_visual">
+            <!-- mainSwiper -->
+            <div class="swiper mainSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/main-01.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/main-02.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/main-03.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/main-04.png" alt=""></div>
+                </div><!-- .swiper-wrapper end -->
+            </div><!-- .mainSwiper end -->
+
+            <div class="inner">
+                <div class="swiperBtn_wrap">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div><!-- .inner end -->
+        </section><!-- .main_visual end -->
+
+        <section class="section-01">
+            <div class="inner">
+                <h3>Concerts</h3>
+
+                <div class="date_wrap">
+                    <p>2025.Apr</p>
+
+                    <div class="calender">
+                        <div class="slide" data-aos="fade-up" data-aos-anchor=".flex-box">
+                            <div class="day-wrap">
+                                <div class="day ">
+                                    <span>MON</span>
+                                    <span class="num" data-day="28">28</span>
+                                </div>
+                                <div class="day ">
+                                    <span>TUE</span>
+                                    <span class="num" data-day="29">29</span>
+                                </div>
+                                <div class="day ">
+                                    <span>WED</span>
+                                    <span class="num" data-day="30">30</span>
+                                </div>
+                                <div class="day ">
+                                    <span>THU</span>
+                                    <span class="num" data-day="01">01</span>
+                                </div>
+                                <div class="day ">
+                                    <span>FRI</span>
+                                    <span class="num" data-day="02">02</span>
+                                    <ul>
+                                    </ul>
+                                </div>
+                                <div class="day ">
+                                    <span>SAT</span>
+                                    <span class="num" data-day="03">03</span>
+                                </div>
+                                <div class="day ">
+                                    <span>SUN</span>
+                                    <span class="num" data-day="04">04</span>
+                                </div>
+                                <div class="day ">
+                                    <span>MON</span>
+                                    <span class="num" data-day="05">05</span>
+                                </div>
+                                <div class="day ">
+                                    <span>TUE</span>
+                                    <span class="num" data-day="06">06</span>
+                                </div>
+                                <div class="day ">
+                                    <span>WED</span>
+                                    <span class="num" data-day="07">07</span>
+                                </div>
+                                <div class="day ">
+                                    <span>THU</span>
+                                    <span class="num" data-day="08">08</span>
+                                </div>
+                                <div class="day ">
+                                    <span>FRI</span>
+                                    <span class="num" data-day="09">09</span>
+                                </div>
+                                <div class="day ">
+                                    <span>SAT</span>
+                                    <span class="num" data-day="10">10</span>
+                                </div>
+                                <div class="day ">
+                                    <span>SUN</span>
+                                    <span class="num" data-day="11">11</span>
+                                </div>
+                                <div class="day ">
+                                    <span>MON</span>
+                                    <span class="num" data-day="12">12</span>
+                                </div>
+                                <div class="day ">
+                                    <span>TUE</span>
+                                    <span class="num" data-day="13">13</span>
+                                </div>
+                                <div class="day ">
+                                    <span>WED</span>
+                                    <span class="num" data-day="14">14</span>
+                                </div>
+                                <div class="day ">
+                                    <span>THU</span>
+                                    <span class="num" data-day="15">15</span>
+                                </div>
+                                <div class="day ">
+                                    <span>FRI</span>
+                                    <span class="num" data-day="16">16</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .calender end -->
+
+                    <a href="#">전체보기</a>
+                </div><!-- .date end -->
+
+                <div class="info_wrap">
+                    <!-- Swiper -->
+                    <div class="swiper concertSwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="image">
+                                        <img src="img/card-01.jpg" alt="">
+                                        <div class="hover_text">
+                                            <p>Concert #1 개막공연 '부활'</p>
+                                            <span>Opening Concert "Resurrection"</span>
+
+                                            <ul>
+                                                <li>대관령 야외공연장 Music Tent</li>
+                                                <li>2025-07-23</li>
+                                            </ul>
+                                        </div><!-- .hover_text end -->
+                                    </div><!-- .image end -->
+
+                                    <div class="info_text">
+                                        <p>Concert #1 개막공연 '부활'</p>
+                                        <span>Opening Concert "Resurrection"</span>
+                                        <ul>
+                                            <li class="location">대관령 야외공연장 Music Tent</li>
+                                            <li class="date">2025-07-23</li>
+                                        </ul>
+                                    </div><!-- .info_text end -->
+                                </a>
+                            </div><!-- .swiper-slide end -->
+                        </div><!-- .swiper-wrapper end -->
+                        <div class="swiper-pagination"></div>
+                    </div><!-- .swiper end -->
+
+                </div><!-- .info_wrap end -->
+            </div><!-- .inner end -->
+        </section><!-- .section-01 end -->
+
+        <section class="section-02">
+            <div class="inner">
+                <div class="text">
+                    <h3>MPyC Academy</h3>
+                    <p>대관령아카데미는 명연주자들의 가르침을 통해 젊은 음악가들에게 성장의 기회를 제공하는 교육 프로그램입니다.</p>
+                </div><!-- .text end -->
+
+                <div class="item_wrap">
+                    <!-- Swiper -->
+                    <div class="swiper vertSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/academy01.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/academy02.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/academy03.jpg" alt=""></div>
+                        </div><!-- .swiper-wrapper end -->
+                    </div><!-- .vertSwiper end -->
+
+                    <div class="swiper vertSwiper_rev">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/academy04.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/academy05.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/academy06.jpg" alt=""></div>
+                        </div><!-- .swiper-wrapper end -->
+                    </div><!-- .vertSwiper end -->
+                </div><!-- .item_wrap end -->
+
+                <a href="#">
+                    <img src="img/scroll_arrow.svg" alt="">
+                </a>
+            </div><!-- .inner end -->
+        </section><!-- .section-02 end -->
+
+        <section class="section-03">
+            <div class="inner">
+                <div class="Youtube">
+                    <h4>Youtube</h4>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0vdBnXgYz4o?si=_lQoh7uu1Of58avE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div><!-- .Youtube end -->
+
+                <div class="Notice">
+                    <div class="text">
+                        <h4>Notice</h4>
+
+                        <a href="#"><img src="img/scroll_arrow.svg" alt=""></a>
+                    </div><!-- .text end -->
+
+                    <div class="info_wrap">
+                        <div class="info badge_br">
+                            <a href="#">
+                                <p>[2025 대관령아카데미] 연중 교육프로그램 “찾아가는 마스터클래스” 피아니스트 신미정 초청</p>
+                                <span>2025.04.28</span>
+                            </a>
+                        </div><!-- .info end -->
+
+                        <div class="info badge_bl">
+                            <a href="#">
+                                <p>[2025 평창대관령음악제] 티켓 패키지 안내(* 선착순 판매)</p>
+                                <span>2025.04.25</span>
+                            </a>
+                        </div><!-- .info end -->
+
+                        <div class="info badge_bl">
+                            <a href="#">
+                                <p>[2025 평창대관령음악제] 콘서트 티켓 할인 혜택 안내</p>
+                                <span>2025.04.23</span>
+                            </a>
+                        </div><!-- .info end -->
+
+                        <div class="info badge_br">
+                            <a href="#">
+                                <p>[강원도민일보] 낯섦과 익숙함 경계에 선 클래식, 무대 오른다</p>
+                                <span>2025.04.22</span>
+                            </a>
+                        </div><!-- .info end -->
+
+                        <div class="info badge_bl">
+                            <a href="#">
+                                <p>[2025 평창대관령음악제] 콘서트 11~21 프로그램 안내</p>
+                                <span>2025.04.15</span>
+                            </a>
+                        </div><!-- .info end -->
+                    </div><!-- .info_wrap end -->
+                </div><!-- .Notice end -->
+            </div><!-- .inner end -->
+        </section><!-- section-03 end -->
+
+        <section class="section-04">
+            <!-- Swiper -->
+            <div class="swiper logoSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/sponsor_img01.png" alt="" class="hover">
+                        <img src="img/sponsor_hover01.png" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sponsor_img02.png" alt="" class="hover">
+                        <img src="img/sponsor_hover02.png" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sponsor_img03.png" alt="" class="hover">
+                        <img src="img/sponsor_hover03.png" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sponsor_img05.png" alt="" class="hover">
+                        <img src="img/sponsor_hover05.png" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sponsor_img06.png" alt="" class="hover">
+                        <img src="img/sponsor_hover06.png" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sponsor_img07.png" alt="" class="hover">
+                        <img src="img/sponsor_hover07.png" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sponsor_img08.png" alt="" class="hover">
+                        <img src="img/sponsor_hover08.png" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sponsor_img09.png" alt="" class="hover">
+                        <img src="img/sponsor_hover09.png" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sponsor_img10.png" alt="" class="hover">
+                        <img src="img/sponsor_hover10.png" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sponsor_img11.png" alt="" class="hover">
+                        <img src="img/sponsor_hover11.png" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sponsor_img12.png" alt="" class="hover">
+                        <img src="img/sponsor_hover12.png" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sponsor_img13.png" alt="" class="hover">
+                        <img src="img/sponsor_hover13.png" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sponsor_img14.png" alt="" class="hover">
+                        <img src="img/sponsor_hover14.png" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sponsor_img15.png" alt="" class="hover">
+                        <img src="img/sponsor_hover15.png" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sponsor_img16.png" alt="" class="hover">
+                        <img src="img/sponsor_hover16.png" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sponsor_img17.png" alt="" class="hover">
+                        <img src="img/sponsor_hover17.png" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sponsor_img18.png" alt="" class="hover">
+                        <img src="img/sponsor_hover18.png" alt="">
+                    </div><!-- .swiper-slide end -->
+                </div><!-- .logoSwiper end -->
+        </section><!-- .section-04 end -->
+    </main><!-- .main end -->
+</body>
+
+</html>
