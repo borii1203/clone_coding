@@ -44,10 +44,6 @@ button {
     filter: invert(1);
 }
 
-.depth-02 {
-    display: none;
-}
-
 .swiper-button-prev:after,
 .swiper-button-next:after {
     display: none;
@@ -76,6 +72,36 @@ button {
     position: fixed;
     top: 0;
     z-index: 99;
+    transition: 0.5s;
+
+    &.scrolled {
+        transform: translateY(-110%);
+    }
+
+    &.color {
+        background-color: #F5F3EC;
+
+        a,
+        button,
+        li,
+        img {
+            filter: invert(0);
+            color: #111 !important;
+        }
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            bottom: -1px;
+            background-color: rgb(51, 51, 51);
+        }
+
+        .inner::after {
+            display: none;
+        }
+    }
 
     .inner {
         display: flex;
@@ -102,12 +128,28 @@ button {
                     display: flex;
 
                     li {
-                        >a {
+                        a {
                             color: #fff;
                             font-size: 1.9rem;
                             font-weight: 500;
                             padding: 30px 30px;
                             display: block;
+                        }
+
+                        .depth-02 {
+                            background-color: #F5F3EC;
+                            position: absolute;
+                            top: 100%;
+
+                            li {
+                                a {
+                                    text-align: center;
+                                    font-size: 1.8rem;
+                                    font-weight: 400;
+                                    color: #111;
+                                    padding: 7.5px 20px;
+                                }
+                            }
                         }
                     }
                 }
@@ -583,11 +625,13 @@ button {
                 img {
                     display: block;
                 }
+
                 &:hover {
                     .hover {
                         opacity: 1;
                     }
                 }
+
                 .hover {
                     position: absolute;
                     top: 50%;

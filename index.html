@@ -17,12 +17,21 @@
         $(function () {
             let prevScrollBar = 0;
 
-            $(window).on('scroll', function(){
+            $(window).on('scroll', function () {
                 let scrollBar = $(this).scrollTop();
 
-                if(scrollBar > prevScrollBar){
+                if (scrollBar > prevScrollBar) {
+                    $('.header').addClass('scrolled');
+                } else {
+                    $('.header').removeClass('scrolled');
                 };
                 prevScrollBar = scrollBar;
+
+                if (scrollBar >= 800) {
+                    $('header').addClass('color');
+                } else {
+                    $('header').removeClass('color');
+                }
 
             });//header scroll
             var swiper = new Swiper(".mainSwiper", {
